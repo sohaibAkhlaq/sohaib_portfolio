@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sohaib Akhlaq - Software Engineering Undergraduate at FAST NUCES, specializing in C++, Java, Python, MEAN Stack, and Software Quality Assurance.">
+  <meta name="keywords"
+    content="Sohaib Akhlaq, Software Engineer, C++, Java, Python, MEAN Stack, SQA, FAST NUCES, Portfolio">
+  <meta name="author" content="Sohaib Akhlaq">
+  <title>Sohaib Akhlaq | Software Engineer & Problem Solver</title>
+
+  <!-- Google Fonts - Premium Luxury Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Aurora Waves Background -->
+  <div class="aurora-layer" aria-hidden="true">
+    <div class="aurora-wave aurora-wave-1"></div>
+    <div class="aurora-wave aurora-wave-2"></div>
+    <div class="aurora-wave aurora-wave-3"></div>
+  </div>
+
+  <!-- Fireflies -->
+  <div class="fireflies-container" aria-hidden="true">
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="monogram">SA</div>
+    </div>
+  </div>
+
+  <!-- Fixed Header -->
+  <header id="main-header">
+    <nav class="nav-container">
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <div class="logo-wrapper">
+          <span class="logo-icon">SA</span>
+          <span class="logo-title">Sohaib Akhlaq</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#tech-stack" class="nav-link"><i class="fas fa-code"></i> Tech Stack</a></li>
+          <li><a href="#achievements" class="nav-link"><i class="fas fa-trophy"></i> Achievements</a></li>
+          <li><a href="#competitions" class="nav-link"><i class="fas fa-certificate"></i> Competitions</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fas fa-folder"></i> Projects</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-background">
+      <svg class="geometric-accent" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="100" x2="800" y2="100" stroke="currentColor" stroke-width="1" opacity="0.1" />
+        <line x1="0" y1="300" x2="800" y2="300" stroke="currentColor" stroke-width="1" opacity="0.1" />
+        <line x1="0" y1="500" x2="800" y2="500" stroke="currentColor" stroke-width="1" opacity="0.1" />
+        <line x1="200" y1="0" x2="200" y2="600" stroke="currentColor" stroke-width="1" opacity="0.1" />
+        <line x1="600" y1="0" x2="600" y2="600" stroke="currentColor" stroke-width="1" opacity="0.1" />
+      </svg>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-name fade-in">SOHAIB AKHLAQ</h1>
+      <p class="hero-tagline typewriter">Software Engineer | MEAN Stack Developer </p>
+      <div class="hero-description fade-in-delay">
+        <p>Dedicated Software Engineering undergraduate at FAST NUCES focused on clean architecture,
+          system-level problem solving, and building scalable full-stack applications with the MEAN stack.
+          Strong foundation in C++, Java, Python, OOP, DSA, and Software Quality Assurance.</p>
+        <p class="hero-stats"><strong>Bug Busters Champion</strong> | <strong>LeetCode Problem Solver</strong> |
+          <strong>MEAN Stack Projects</strong>
+        </p>
+      </div>
+      <a href="#about" class="cta-button"><i class="fas fa-arrow-down"></i> Explore My Work</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-frame">
+            <img src="assets/image/profile.jfif" alt="Sohaib Akhlaq" class="profile-pic">
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="intro-text">I'm a <strong>4th-semester Software Engineering student at FAST-NUCES
+              (Islamabad)</strong> dedicated to building strong computer science fundamentals and creating
+            clean, scalable software.</p>
+
+          <p>I specialise in C++, Java, and Python, with solid knowledge in Object-Oriented Programming, Data
+            Structures, Algorithms, and system-level problem solving. My focus is on understanding how
+            software works internally &mdash; designing efficient systems, writing maintainable,
+            production-ready code, and solving complex algorithmic challenges.</p>
+
+          <div class="specializations">
+            <h3>What I Do:</h3>
+            <ul class="skills-list">
+              <li><strong>MEAN Stack Development</strong> &mdash; Full-stack web apps with MongoDB,
+                Express, Angular & Node.js</li>
+              <li><strong>Problem Solving & DSA</strong> &mdash; Consistently practising on LeetCode,
+                focusing on graphs, DP, trees & greedy algorithms</li>
+              <li><strong>Software Quality Assurance</strong> &mdash; Testing with Selenium, Postman,
+                Jira, JMeter &amp; ESLint</li>
+              <li><strong>Core CS Foundations</strong> &mdash; Strong OOP, design patterns, and
+                system-level programming in C++ and Java</li>
+            </ul>
+          </div>
+
+          <div class="education-experience">
+            <h3>Education & Experience</h3>
+            <div class="timeline-item">
+              <h4><i class="fas fa-graduation-cap"></i> FAST-NUCES, Islamabad</h4>
+              <p class="timeline-date">BS Software Engineering (2024 &ndash; 2028)</p>
+            </div>
+            <div class="timeline-item">
+              <h4><i class="fas fa-graduation-cap"></i> Fazaia Inter College, Islamabad</h4>
+              <p class="timeline-date">Intermediate (Pre-Engineering)</p>
+            </div>
+          </div>
+
+          <div class="values">
+            <h3>Core Values</h3>
+            <div class="values-grid">
+              <div class="value-item">Fundamentals First</div>
+              <div class="value-item">Clean Code</div>
+              <div class="value-item">Quality Driven</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech-stack" class="tech-stack-section">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+
+      <div class="tech-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+              alt="C++">
+            <span>C++</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt="Java">
+            <span>Java</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+              alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+              alt="TypeScript">
+            <span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3><i class="fas fa-layer-group"></i> MEAN Stack & Web</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+              alt="MongoDB">
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+              alt="Express.js">
+            <span>Express.js</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
+              alt="Angular">
+            <span>Angular</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+              alt="Node.js">
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+              alt="HTML5">
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+              alt="CSS3">
+            <span>CSS3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3><i class="fas fa-bug"></i> Software Quality Assurance</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg"
+              alt="Selenium">
+            <span>Selenium</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
+            <span>Postman</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg"
+              alt="Jira">
+            <span>Jira</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg"
+              alt="ESLint">
+            <span>ESLint</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git">
+            <span>Git</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+              alt="GitHub">
+            <span>GitHub</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+              alt="Linux">
+            <span>Linux</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+            <span>VS Code</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma">
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <h2 class="section-title">Achievements & Problem Solving</h2>
+
+      <div class="achievements-intro">
+        <p>Focused on building strong algorithmic foundations and excelling in university-level competitions and
+          real-world problem solving.</p>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card scroll-reveal">
+          <div class="card-icon"><i class="fas fa-trophy"></i></div>
+          <h3 class="card-title">Bug Busters Champion</h3>
+          <p class="card-description">Winner of the Bug Busters Coding Competition &mdash; demonstrating
+            debugging mastery and rapid problem-solving under pressure.</p>
+        </div>
+
+        <div class="achievement-card scroll-reveal">
+          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="card-title">LeetCode Problem Solver</h3>
+          <p class="card-description">Consistently practising DSA & competitive programming on LeetCode,
+            building expertise in Graphs, DP, Trees & Greedy algorithms.</p>
+        </div>
+
+        <div class="achievement-card scroll-reveal">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="card-title">MEAN Stack Projects</h3>
+          <p class="card-description">Building full-stack web applications using MongoDB, Express, Angular &
+            Node.js &mdash; applying clean architecture and scalable design patterns.</p>
+        </div>
+
+        <div class="achievement-card scroll-reveal">
+          <div class="card-icon"><i class="fas fa-bolt"></i></div>
+          <h3 class="card-title">Strong Academic Focus</h3>
+          <p class="card-description">Consistent academic excellence at FAST-NUCES with deep focus on core CS
+            courses: OOP, DSA, and Software Quality Assurance.</p>
+        </div>
+      </div>
+
+      <div class="leetcode-profile scroll-reveal">
+        <h3><i class="fas fa-code"></i> LeetCode Profile</h3>
+        <p>Check out my problem-solving journey and statistics</p>
+        <a href="https://leetcode.com/u/Sohaib_12/" target="_blank" rel="noopener noreferrer" class="profile-link">
+          <i class="fas fa-external-link-alt"></i> Visit LeetCode Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitions & Achievements -->
+  <section id="competitions" class="certificates-section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Competitions & Wins</h2>
+
+      <div class="certificates-grid competitions-grid">
+        <div class="certificate-card competition-card scroll-reveal">
+          <div class="certificate-image">
+            <img src="assets/Competition/BugBuster.png" alt="Bug Busters Competition"
+              onload="this.parentElement.classList.add('loaded')">
+          </div>
+          <div class="certificate-info">
+            <h4>Bug Busters Coding Competition</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Winning the debugging & coding
+              competition, showcasing rapid problem-solving skills.</p>
+            <div class="certificate-role"><i class="fas fa-trophy"></i> Winner</div>
+          </div>
+        </div>
+
+        <div class="certificate-card competition-card scroll-reveal">
+          <div class="certificate-image">
+            <img src="assets/Competition/Nascon.png" alt="NASCON Event"
+              onload="this.parentElement.classList.add('loaded')">
+          </div>
+          <div class="certificate-info">
+            <h4>NASCON</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Participated in NASCON &mdash;
+              FAST-NUCES national computing competition.</p>
+            <div class="certificate-role"><i class="fas fa-medal"></i> Participant</div>
+          </div>
+        </div>
+
+        <div class="certificate-card competition-card scroll-reveal">
+          <div class="certificate-image">
+            <img src="assets/Competition/Devcon.jpeg" alt="DevCon Event"
+              onload="this.parentElement.classList.add('loaded')">
+          </div>
+          <div class="certificate-info">
+            <h4>DevCon</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Engaged in DevCon &mdash; a
+              developer conference showcasing innovation and emerging tech.</p>
+            <div class="certificate-role"><i class="fas fa-medal"></i> Participant</div>
+          </div>
+        </div>
+
+        <div class="certificate-card competition-card scroll-reveal">
+          <div class="certificate-image">
+            <img src="assets/Competition/CodeAir.png" alt="CodeAir Competition"
+              onload="this.parentElement.classList.add('loaded')">
+          </div>
+          <div class="certificate-info">
+            <h4>CodeAir</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Competed in CodeAir &mdash; a
+              high-intensity coding challenge for top engineering students.</p>
+            <div class="certificate-role"><i class="fas fa-medal"></i> Participant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <p
+        style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+        Handpicked projects that showcase real-world problem solving and engineering depth.
+      </p>
+
+      <div class="projects-grid">
+        <!-- OceanRoute Nav -->
+        <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <i class="fas fa-ship"></i>
+          </div>
+          <div class="project-body">
+            <h3>OceanRoute Nav</h3>
+            <p>A C++ ocean navigation system implementing Dijkstra's and A* algorithms with priority
+              queues. Features weather-aware routing, real-time hazard avoidance, and fuel-optimised
+              pathfinding across oceanic graph networks.</p>
+            <div class="card-tech-stack">
+              <span class="card-tech-tag">C++</span>
+              <span class="card-tech-tag">Dijkstra</span>
+              <span class="card-tech-tag">A*</span>
+              <span class="card-tech-tag">Graph Theory</span>
+              <span class="card-tech-tag">Priority Queues</span>
+            </div>
+            <div class="card-action-links">
+              <a href="https://github.com/sohaibAkhlaq/OceanRoute_Nav." target="_blank" rel="noopener noreferrer"
+                class="card-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ClassEase -->
+        <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="project-body">
+            <h3>ClassEase</h3>
+            <p>A full-stack classroom management system built with the MEAN stack (MongoDB, Express,
+              Angular, Node.js). Features role-based access, attendance tracking, assignment management,
+              and an intuitive dashboard for teachers and students.</p>
+            <div class="card-tech-stack">
+              <span class="card-tech-tag">MongoDB</span>
+              <span class="card-tech-tag">Express</span>
+              <span class="card-tech-tag">Angular</span>
+              <span class="card-tech-tag">Node.js</span>
+              <span class="card-tech-tag">REST API</span>
+            </div>
+            <div class="card-action-links">
+              <a href="https://github.com/sohaibAkhlaq/ClassEase-FAST-Timetable" target="_blank"
+                rel="noopener noreferrer" class="card-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://github.com/sohaibAkhlaq" target="_blank" rel="noopener noreferrer" class="cta-button"
+          style="display: inline-flex; background: transparent; border: 1px solid var(--gold-primary);">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Luxury Footer -->
+  <footer id="contact" class="contact-footer">
+    <div class="container">
+      <h2 class="footer-title">Let's Build Something Extraordinary</h2>
+
+      <div class="footer-grid">
+        <!-- Left Column: Info & Social -->
+        <div class="footer-info">
+          <div class="info-group">
+            <h4>Contact Details</h4>
+            <div class="contact-links">
+              <a href="mailto:sohaibikhlaq5@gmail.com" class="footer-link">
+                <i class="fas fa-envelope"></i> sohaibikhlaq5@gmail.com
+              </a>
+              <a href="https://linkedin.com/in/sohaib-akhlaq-fast" target="_blank" class="footer-link"
+                style="background: var(--gold-primary); color: #000; border-color: var(--gold-primary); justify-content: center; font-weight: bold;">
+                <i class="fab fa-linkedin-in"></i> Let's Connect
+              </a>
+            </div>
+            <div class="social-icons-row">
+              <a href="https://github.com/sohaibAkhlaq" target="_blank" class="social-btn" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://leetcode.com/u/Sohaib_12/" target="_blank" class="social-btn" aria-label="LeetCode"><i
+                  class="fas fa-code"></i></a>
+              <a href="https://x.com/Sohaib84346165" target="_blank" class="social-btn" aria-label="X / Twitter"><i
+                  class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="info-group" style="margin-top: 2rem;">
+            <h4>My Mission</h4>
+            <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
+              Focused on fundamentals today &mdash; building scalable, reliable software tomorrow.
+              Engineer by mindset, builder by passion, and quality-driven by principle.
+            </p>
+          </div>
+
+          <div class="info-group" style="margin-top: 1rem;">
+            <h4>Quick Navigation</h4>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#projects"
+                style="color: var(--gold-primary); text-decoration: none; font-size: 0.9rem;">Projects</a>
+              <a href="#about" style="color: var(--gold-primary); text-decoration: none; font-size: 0.9rem;">About
+                Me</a>
+              <a href="#competitions"
+                style="color: var(--gold-primary); text-decoration: none; font-size: 0.9rem;">Competitions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Professional Form -->
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h3>Send a Message</h3>
+            <p style="color: #888;">I'm currently available for new opportunities.</p>
+          </div>
+
+          <form action="https://formsubmit.co/sohaibikhlaq5@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Portfolio Inquiry — Sohaib Akhlaq">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+              <div class="input-group">
+                <input type="text" name="name" class="input-field" placeholder="Name" required>
+              </div>
+              <div class="input-group">
+                <input type="email" name="email" class="input-field" placeholder="Email" required>
+              </div>
+            </div>
+
+            <div class="input-group" style="margin-bottom: 1.5rem;">
+              <input type="text" name="subject" class="input-field" placeholder="Subject" required>
+            </div>
+
+            <div class="input-group" style="margin-bottom: 2rem;">
+              <textarea name="message" class="input-field" rows="3" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Send Inquiry <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright">&copy; 2026 Sohaib Akhlaq. All Rights Reserved.</p>
+        <p class="signature">Crafted with precision by <span>SA</span> <i class="fas fa-code"
+            style="margin: 0 5px; font-size: 0.8rem;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
