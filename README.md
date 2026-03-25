@@ -1,4 +1,4 @@
-# Sohaib Akhlaq — Portfolio (Static)
+# Sohaib Akhlaq — Portfolio 
 
 This is a **high-UI, responsive portfolio website** built as a **static site** (no npm/build required).  
 All your content is stored in **`data.js`** so you can update it easily.
